@@ -8,13 +8,13 @@ namespace books.Core.Entities
     {
         public BookList()
         {
-            books = new List<Book>();
+            Books = new List<Book>();
         }
 
-        public IEnumerable<Book> books { get; set; }
+        public IEnumerable<Book> Books { get; set; }
 
-        public Author author { get; set; }
+        public Author Author { get; set; }
 
-        public int id { get; set; }
+        public int Id { get; set; }
     }
 }

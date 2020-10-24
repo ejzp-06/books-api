@@ -7,14 +7,14 @@ namespace books_api.Models
 {
     public class Book
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
-        public string name { get; set; }
+        public string Name { get; set; }
 
-        public DateTime publishDate { get; set; }
+        public DateTime PublishDate { get; set; }
 
-        public Author author { get; set; }
+        public Author Author { get; set; }
 
-        public int copies { get; set; }
+        public int Copies { get; set; }
     }
 }

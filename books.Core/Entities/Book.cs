@@ -6,12 +6,12 @@ namespace books.Core.Entities
 {
     class Book
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
-        public string name { get; set; }
+        public string Name { get; set; }
 
-        public Author author { get; set; }
+        public Author Author { get; set; }
 
-        public int copies { get; set; }
+        public int Copies { get; set; }
     }
 }
