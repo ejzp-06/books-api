@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iPuwSX7ISgGpL0h6lLL5ez+Bro0jn9I8o7uq0889t0A8BzgmssHaO9savwSGCoIfasVqFr+/1/q5Vv8ImdoFsQ==",
+  "dgSpecHash": "YVPYNgzqzKro/Bv7VMqs+3aqcFmXVF2ANovb6PRXl1IzkLFXmRF77CfOdCUnt/VocK/o8xmej2+CM+Zkc7qxuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

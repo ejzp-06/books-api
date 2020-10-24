@@ -5,5 +5,9 @@
     <RootNamespace>books_api</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Middlewares\" />
+  </ItemGroup>
+
 
 </Project>

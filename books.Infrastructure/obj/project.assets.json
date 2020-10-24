@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
       "projectName": "books.Infrastructure",
-      "projectPath": "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",

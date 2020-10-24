@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Core\\books.Core.csproj": {}
+    "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Core\\books.Core.csproj": {
+    "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Core\\books.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj",
         "projectName": "books.Core",
-        "projectPath": "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Core\\books.Core.csproj",
+        "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj",
         "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ejzp_\\source\\repos\\books-api\\books.Core\\obj\\",
+        "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
