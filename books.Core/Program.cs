@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace books.Core
 {
     class Program

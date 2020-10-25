@@ -13,7 +13,7 @@ namespace books.Core.Entities
 
         public IEnumerable<Book> Books { get; set; }
 
-        public Author Author { get; set; }
+        public int AuthorId { get; set; }
 
         public int Id { get; set; }
     }

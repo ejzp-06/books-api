@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace books_api.Models
 {
-    public class Return
+    public class BookListDto
     {
         public int Id { get; set; }
 
-        public Author Author { get; set; }
+        public IEnumerable<BookDto> Books { get; set; }
 
-        public Book Book { get; set; }
+        public AuthorDto Author { get; set; }
 
     }
 }

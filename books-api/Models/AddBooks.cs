@@ -5,13 +5,15 @@ using System.Threading.Tasks;
 
 namespace books_api.Models
 {
-    public class Author
+    public class AddBooks
     {
-        public int Id { get; set; }
-        
+
         public string Name { get; set; }
 
-        public int Age { get; set; }
+        public DateTime PublishDate { get; set; }
 
+        public int AuthorId { get; set; }
+
+        public int Copies { get; set; }
     }
 }

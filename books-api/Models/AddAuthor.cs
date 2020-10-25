@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace books.Core.Entities
+namespace books_api.Models
 {
-    public class Author
+    public class AddAuthor
     {
-        public int Id { get; set; }
 
         public string Name { get; set; }
 
         public int Age { get; set; }
-
     }
 }
