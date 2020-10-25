@@ -10,7 +10,7 @@ namespace books.Core.Entities
 
         public string Name { get; set; }
 
-        public Author Author { get; set; }
+        public int AuthorId { get; set; }
 
         public int Copies { get; set; }
     }

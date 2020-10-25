@@ -43,6 +43,7 @@ C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\net
 C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+<<<<<<< HEAD
 C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\books.Infrastructure.exe
 C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -89,3 +90,5 @@ C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\obj\Debug
 C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\obj\Debug\netcoreapp3.1\books.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\obj\Debug\netcoreapp3.1\books.Infrastructure.AssemblyInfo.cs
 C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\obj\Debug\netcoreapp3.1\books.Infrastructure.csproj.CopyComplete
+=======
+>>>>>>> ce43543f48e2c94a429efc6bce21f577c063b95b

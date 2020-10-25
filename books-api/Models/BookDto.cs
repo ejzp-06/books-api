@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace books_api.Models
 {
-    public class Book
+    public class BookDto
     {
         public int Id { get; set; }
 
@@ -13,7 +13,9 @@ namespace books_api.Models
 
         public DateTime PublishDate { get; set; }
 
-        public Author Author { get; set; }
+        public AuthorDto Author { get; set; }
+
+        public int AuthorId { get; set; }
 
         public int Copies { get; set; }
     }

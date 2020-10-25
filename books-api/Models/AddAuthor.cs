@@ -5,7 +5,11 @@ using System.Threading.Tasks;
 
 namespace books_api.Models
 {
-    public class Borrowing
+    public class AddAuthor
     {
+
+        public string Name { get; set; }
+
+        public int Age { get; set; }
     }
 }
