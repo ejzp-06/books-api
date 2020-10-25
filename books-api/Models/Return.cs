@@ -7,11 +7,11 @@ namespace books_api.Models
 {
     public class Return
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
-        public Author author { get; set; }
+        public Author Author { get; set; }
 
-        public Book book { get; set; }
+        public Book Book { get; set; }
 
     }
 }

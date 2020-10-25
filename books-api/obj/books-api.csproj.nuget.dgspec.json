@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\books-api.csproj": {}
+    "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books-api\\books-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\books-api.csproj": {
+    "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books-api\\books-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\books-api.csproj",
+        "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books-api\\books-api.csproj",
         "projectName": "books-api",
-        "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\books-api.csproj",
-        "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\obj\\",
+        "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books-api\\books-api.csproj",
+        "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books-api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +40,22 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
