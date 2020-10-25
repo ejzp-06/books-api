@@ -28,7 +28,7 @@ namespace books_api.Controllers
             var _return = _BooksDbContext.Baskets.FirstOrDefault(b => b.Id == ReturnId && !b.IsDeleted);
             if (_return == null)
             {
-                return NotFound("El autor no existe.");
+                return NotFound("El retorno no existe.");
             }
 
             return Ok(new AuthorDto
@@ -47,6 +47,17 @@ namespace books_api.Controllers
                 AuthorId = _return.AuthorId,
                 BookId = _return.BookId
             };
+
+            BookDto bookTmp = _BooksDbContext.Books.Update(b => b.Id == _return.Id).FirstOrDefault();
+
+            if (bookTmp == null)
+            {
+                return NotFound("El libro no existe.");
+            }
+            else
+            {
+                bookTmp.Copies = bookTmp.Copies + 1;
+            }
 
             _BooksDbContext.Returns.Add(newReturn);
             _BooksDbContext.SaveChanges();

@@ -22,6 +22,7 @@ namespace books_api.Controllers
         }
 
         [HttpGet]
+
         public ActionResult<BookDto> Get()
         {
             var bookId = _httpContextAccessor.HttpContext.Request.Headers["#Id"].ToString();
@@ -42,6 +43,7 @@ namespace books_api.Controllers
         }
 
         [HttpPost]
+    
         public ActionResult<BookDto> Post([FromBody] AddBooks book)
         {
             var newBook = new BookDto
@@ -57,5 +59,6 @@ namespace books_api.Controllers
 
             return newBook;
         }
+
     }
 }

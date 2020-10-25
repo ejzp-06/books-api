@@ -53,5 +53,22 @@ namespace books_api.Controllers
 
             return newAuthor;
         }
+
+        [HttpGet]
+        [Route("{id}/books")]
+        public ActionResult<IEnumerable<BookDto>> Get([FromQuery] int authorId)
+        {
+            var list = BooksDbContext.Books.Where(b => b.AuthorId = authorId);
+            return Ok(list.Select(b => new BookDto
+            {
+                Id = b.Id,
+                Author = b.Author,
+                AuthorId = b.AuthorId,
+                Name = b.Name,
+                Copies = b.Copies,
+                PublishDate = b.PublishDate
+            }));
+        }
+
     }
 }

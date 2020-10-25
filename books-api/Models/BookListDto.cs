@@ -13,5 +13,7 @@ namespace books_api.Models
 
         public AuthorDto Author { get; set; }
 
+        public int AuthorId { get; set; }
+
     }
 }

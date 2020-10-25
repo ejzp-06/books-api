@@ -26,10 +26,10 @@ namespace books_api.Controllers
         public ActionResult<BorrowingDto> Get()
         {
             var borrowingId = _httpContextAccessor.HttpContext.Request.Headers["#Id"].ToString();
-            var borrowing = _BooksDbContext.Baskets.FirstOrDefault(b => b.Id == borrowingId && !b.IsDeleted);
+            var borrowing = _BooksDbContext.Borrowings.FirstOrDefault(b => b.Id == borrowingId && !b.IsDeleted);
             if (borrowing == null)
             {
-                return NotFound("El autor no existe.");
+                return NotFound("El prestamo no existe.");
             }
 
             return Ok(new BorrowingDto
@@ -48,6 +48,23 @@ namespace books_api.Controllers
                 BookId = borrowing.BookId,
                 AuthorId = borrowing.AuthorId
             };
+
+            var book = _BooksDbContext.Books.FirstOrDefault(b => b.Id == borrowing.BookId && !b.IsDeleted);
+            if (book == null || book.Copies <= 3)
+            {
+                return NotFound("El libro no existe o no hay suficientes copias disponibles.");
+            }
+
+            BookDto bookTmp = _BooksDbContext.Books.Update(b => b.Id == book.Id).FirstOrDefault();
+
+            if(bookTmp == null)
+            {
+                return NotFound("El libro no existe o no hay suficientes copias disponibles.");
+            }
+            else
+            {
+                bookTmp.Copies = book.Copies - 1;
+            }
 
             _BooksDbContext.Borrowings.Add(newBorrowing);
             _BooksDbContext.SaveChanges();
