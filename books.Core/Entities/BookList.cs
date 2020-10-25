@@ -4,7 +4,7 @@ using System.Text;
 
 namespace books.Core.Entities
 {
-    class BookList
+    public class BookList
     {
         public BookList()
         {

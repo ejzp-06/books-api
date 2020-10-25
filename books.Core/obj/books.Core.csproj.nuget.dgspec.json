@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books.Core\\books.Core.csproj": {}
+    "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books.Core\\books.Core.csproj": {
+    "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books.Core\\books.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj",
         "projectName": "books.Core",
-        "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books.Core\\books.Core.csproj",
-        "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books.Core\\obj\\",
+        "projectPath": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj",
+        "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

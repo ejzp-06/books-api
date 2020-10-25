@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KQcUk1OZXloW4voSrdMk1W2MefQ1ITJ/x9VTwn7Bim9rZHwMDrktEI7vaoXxtvhSzVrVa62Armp981RCLImWBQ==",
+  "dgSpecHash": "wXPPZbZUtrPrz+VTyZvPlII6zlzTRpYSKULq9TJPhJB4Cj/0PiEIdHdZIyvM9ko84PLSlITu04nAZTsv1mhYyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

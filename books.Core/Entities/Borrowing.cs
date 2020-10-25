@@ -4,7 +4,7 @@ using System.Text;
 
 namespace books.Core.Entities
 {
-    class Borrowing
+    public class Borrowing
     {
         public int Id { get; set; }
 

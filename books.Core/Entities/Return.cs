@@ -4,7 +4,7 @@ using System.Text;
 
 namespace books.Core.Entities
 {
-    class Return
+    public class Return
     {
         public int Id { get; set; }
 

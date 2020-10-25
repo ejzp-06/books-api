@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "books-api", "books-api\books-api.csproj", "{51BA658E-D5C0-4968-9CEA-B9D284FD4806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "books-api", "books-api\books-api.csproj", "{51BA658E-D5C0-4968-9CEA-B9D284FD4806}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C0BA550-2920-4893-AD26-FDA3C6F9F91B} = {1C0BA550-2920-4893-AD26-FDA3C6F9F91B}
+		{D7D55C7A-661C-408D-8341-B20C70178596} = {D7D55C7A-661C-408D-8341-B20C70178596}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "books.Core", "books.Core\books.Core.csproj", "{D7D55C7A-661C-408D-8341-B20C70178596}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "books.Core", "books.Core\books.Core.csproj", "{D7D55C7A-661C-408D-8341-B20C70178596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "books.Infrastructure", "books.Infrastructure\books.Infrastructure.csproj", "{1C0BA550-2920-4893-AD26-FDA3C6F9F91B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "books.Infrastructure", "books.Infrastructure\books.Infrastructure.csproj", "{1C0BA550-2920-4893-AD26-FDA3C6F9F91B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

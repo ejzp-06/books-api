@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using books_api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using books.Infrastructure;
 
 namespace books_api.Controllers
 {
@@ -25,7 +26,7 @@ namespace books_api.Controllers
         public ActionResult<AuthorDto> Get()
         {
             var authorId = _httpContextAccessor.HttpContext.Request.Headers["#Id"].ToString();
-            var author = _BooksDbContext.Baskets.FirstOrDefault(b => b.Id == authorId&& !b.IsDeleted);
+            var author = _BooksDbContext.Authors.FirstOrDefault(b => b.Id == authorId && !b.IsDeleted);
             if (author == null)
             {
                 return NotFound("El autor no existe.");

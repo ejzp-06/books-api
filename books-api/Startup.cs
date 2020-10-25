@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using books.Infrastructure;
 
 namespace books_api
 {
@@ -26,6 +28,8 @@ namespace books_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<BooksDbContext>((s, o) => o.UseSqlite("Data source=data.db"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -18,5 +18,10 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\books.Core\books.Core.csproj" />
+    <ProjectReference Include="..\books.Infrastructure\books.Infrastructure.csproj" />
+  </ItemGroup>
+
 
 </Project>

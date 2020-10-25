@@ -439,6 +439,20 @@
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
+      },
+      "books.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.9",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/books.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/books.Core.dll": {}
+        }
       }
     }
   },
@@ -1181,13 +1195,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "books.Core/1.0.0": {
+      "type": "project",
+      "path": "../books.Core/books.Core.csproj",
+      "msbuildProject": "../books.Core/books.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Microsoft.EntityFrameworkCore >= 3.1.9",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.9",
+      "Microsoft.EntityFrameworkCore.Relational >= 3.1.9",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.9",
-      "Newtonsoft.Json >= 12.0.3"
+      "Newtonsoft.Json >= 12.0.3",
+      "books.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1196,11 +1218,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
       "projectName": "books.Infrastructure",
-      "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1215,7 +1237,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj": {
+              "projectPath": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1227,9 +1253,17 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.1.9, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.9, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[3.1.9, )"
           },

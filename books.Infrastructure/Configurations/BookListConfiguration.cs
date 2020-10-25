@@ -12,9 +12,9 @@ namespace books.Infrastructure.Configurations
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasMany<Books>(x => x.Id)
-                .WithOne(i => i.BookList)
-                .HasForeignKey(x => x.BookId);
+            //builder.HasMany<Book>(x => x.Id)
+            //    .WithOne(i => i.BookList)
+            //    .HasForeignKey(x => x.BookId);
 
         }
     }

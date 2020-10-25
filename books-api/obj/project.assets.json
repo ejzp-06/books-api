@@ -439,6 +439,35 @@
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
+      },
+      "books.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.9",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/books.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/books.Core.dll": {}
+        }
+      },
+      "books.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.9",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.9",
+          "books.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/books.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/books.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -1181,33 +1210,41 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "books.Core/1.0.0": {
+      "type": "project",
+      "path": "../books.Core/books.Core.csproj",
+      "msbuildProject": "../books.Core/books.Core.csproj"
+    },
+    "books.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../books.Infrastructure/books.Infrastructure.csproj",
+      "msbuildProject": "../books.Infrastructure/books.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore.Design >= 3.1.9",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.9",
-      "Newtonsoft.Json >= 12.0.3"
+      "Newtonsoft.Json >= 12.0.3",
+      "books.Core >= 1.0.0",
+      "books.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Juan Carranza\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ejzp_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books-api\\books-api.csproj",
+      "projectUniqueName": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\books-api.csproj",
       "projectName": "books-api",
-      "projectPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books-api\\books-api.csproj",
-      "packagesPath": "C:\\Users\\Juan Carranza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan Carranza\\Documents\\GitHub\\books-api\\books-api\\obj\\",
+      "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\books-api.csproj",
+      "packagesPath": "C:\\Users\\ejzp_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Juan Carranza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ejzp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1219,7 +1256,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj": {
+              "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj"
+            },
+            "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Infrastructure\\books.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1264,7 +1308,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
