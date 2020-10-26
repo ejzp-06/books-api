@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LedBGdh3jgmpwYookrlrXu0YvvwWxwJcuRda/WRm7XPq+eAlukAtJS/Ld7iOG+GU/rL7LQ0rtGrE7kjk+LtBww==",
+  "dgSpecHash": "pKEvEETqsVIXBozLRFx1BgRHntBbBaRMgzw3bMuH279L2KlcNOFcYs47VBy021f88G6K4A5XcB2bqtrn1JgzEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ejzp_\\source\\repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj",
+  "projectFilePath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books.Core\\books.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
@@ -28,7 +28,6 @@
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
-    "C:\\Users\\ejzp_\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.2\\sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",

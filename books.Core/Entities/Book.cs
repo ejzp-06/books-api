@@ -12,6 +12,8 @@ namespace books.Core.Entities
 
         public int AuthorId { get; set; }
 
+        public DateTime PublishDate { get; set; }
+
         public int Copies { get; set; }
     }
 }

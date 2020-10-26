@@ -92,3 +92,14 @@ C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\obj\Debug
 C:\Users\Juan Carranza\Documents\GitHub\books-api\books.Infrastructure\obj\Debug\netcoreapp3.1\books.Infrastructure.csproj.CopyComplete
 =======
 >>>>>>> ce43543f48e2c94a429efc6bce21f577c063b95b
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\obj\Debug\netcoreapp3.1\books.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\books.Infrastructure.deps.json
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\books.Infrastructure.runtimeconfig.json
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\books.Infrastructure.runtimeconfig.dev.json
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\books.Infrastructure.dll
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\books.Infrastructure.pdb
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\books.Core.dll
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\bin\Debug\netcoreapp3.1\books.Core.pdb
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\obj\Debug\netcoreapp3.1\books.Infrastructure.dll
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\obj\Debug\netcoreapp3.1\books.Infrastructure.pdb
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books.Infrastructure\obj\Debug\netcoreapp3.1\books.Infrastructure.genruntimeconfig.cache

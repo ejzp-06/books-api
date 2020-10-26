@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using books_api.Models;
-using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using books.Infrastructure;
+using books.Core.Entities;
 
 namespace books_api.Controllers
 {
@@ -26,7 +27,7 @@ namespace books_api.Controllers
         public ActionResult<BorrowingDto> Get()
         {
             var borrowingId = _httpContextAccessor.HttpContext.Request.Headers["#Id"].ToString();
-            var borrowing = _BooksDbContext.Borrowings.FirstOrDefault(b => b.Id == borrowingId && !b.IsDeleted);
+            var borrowing = _BooksDbContext.Borrowings.FirstOrDefault(b => b.Id.ToString() == borrowingId);
             if (borrowing == null)
             {
                 return NotFound("El prestamo no existe.");
@@ -35,27 +36,28 @@ namespace books_api.Controllers
             return Ok(new BorrowingDto
             {
                 Id = borrowing.Id,             
-                Book= borrowing.Book,
-                Author = borrowing.Author
+                BookId= borrowing.BookId,
+                AuthorId = borrowing.AuthorId
             });
         }
 
         [HttpPost]
-        public ActionResult<BorrowingDto> Post([FromBody] AddBorrowing borrowing)
+        public ActionResult<Borrowing
+            > Post([FromBody] AddBorrowing borrowing)
         {
-            var newBorrowing= new BorrowingDto
+            var newBorrowing= new Borrowing
             {
                 BookId = borrowing.BookId,
                 AuthorId = borrowing.AuthorId
             };
 
-            var book = _BooksDbContext.Books.FirstOrDefault(b => b.Id == borrowing.BookId && !b.IsDeleted);
+            var book = _BooksDbContext.Books.FirstOrDefault(b => b.Id == borrowing.BookId);
             if (book == null || book.Copies <= 3)
             {
                 return NotFound("El libro no existe o no hay suficientes copias disponibles.");
             }
 
-            BookDto bookTmp = _BooksDbContext.Books.Update(b => b.Id == book.Id).FirstOrDefault();
+            var bookTmp = _BooksDbContext.Books.FirstOrDefault(b => b.Id == book.Id);
 
             if(bookTmp == null)
             {
@@ -63,7 +65,8 @@ namespace books_api.Controllers
             }
             else
             {
-                bookTmp.Copies = book.Copies - 1;
+                bookTmp.Copies -= 1;
+                _BooksDbContext.Entry(bookTmp).CurrentValues.SetValues(bookTmp);
             }
 
             _BooksDbContext.Borrowings.Add(newBorrowing);

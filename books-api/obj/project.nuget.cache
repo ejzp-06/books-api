@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BBPHaexk5/Z8jw1BqG9fzfupDfbKYFq8nyqZz3OK5dHGMS0uc8h4i3Lef2BILUykU+q+nMFSBcgYaWnEs+qZLQ==",
+  "dgSpecHash": "C98xWNIZ8NIEJs9j5yhMD4PBwmyDhW3XBNaYzxfXC8URzkfZcHnBB/sQNlxdgWc4ipyF/e6NeGvYPunZkEiICA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ejzp_\\Source\\Repos\\ejzp-06\\books-api\\books-api\\books-api.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,6 @@
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
-    "C:\\Users\\ejzp_\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.2\\sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\ejzp_\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",

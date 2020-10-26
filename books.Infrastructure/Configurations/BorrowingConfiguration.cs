@@ -10,9 +10,9 @@ namespace books.Infrastructure.Configurations
     {
            public void Configure(EntityTypeBuilder<Borrowing> builder)
             {
-            builder.HasKey(x => x.Id);
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.Property(x => x.BookId).IsRequired().IsConcurrencyToken();
+                builder.HasKey(x => x.Id);
+                builder.Property(x => x.Id).ValueGeneratedOnAdd();
+                builder.Property(x => x.BookId).IsRequired().IsConcurrencyToken();
 
             }
     }

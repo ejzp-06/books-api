@@ -6,6 +6,7 @@ using books_api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using books.Infrastructure;
+using books.Core.Entities;
 
 namespace books_api.Controllers
 {
@@ -26,7 +27,7 @@ namespace books_api.Controllers
         public ActionResult<AuthorDto> Get()
         {
             var authorId = _httpContextAccessor.HttpContext.Request.Headers["#Id"].ToString();
-            var author = _BooksDbContext.Authors.FirstOrDefault(b => b.Id == authorId && !b.IsDeleted);
+            var author = _BooksDbContext.Authors.FirstOrDefault(b => b.Id.ToString() == authorId);
             if (author == null)
             {
                 return NotFound("El autor no existe.");
@@ -41,9 +42,9 @@ namespace books_api.Controllers
         }
 
         [HttpPost]
-        public ActionResult<AuthorDto> Post([FromBody] AddAuthor author)
+        public ActionResult<Author> Post([FromBody] AddAuthor author)
         {
-            var newAuthor = new AuthorDto
+            var newAuthor = new Author
             {
                 Age = author.Age,
                 Name = author.Name
@@ -59,11 +60,10 @@ namespace books_api.Controllers
         [Route("{id}/books")]
         public ActionResult<IEnumerable<BookDto>> Get([FromQuery] int authorId)
         {
-            var list = BooksDbContext.Books.Where(b => b.AuthorId = authorId);
+            var list = _BooksDbContext.Books.Where(b => b.AuthorId == authorId);
             return Ok(list.Select(b => new BookDto
             {
                 Id = b.Id,
-                Author = b.Author,
                 AuthorId = b.AuthorId,
                 Name = b.Name,
                 Copies = b.Copies,

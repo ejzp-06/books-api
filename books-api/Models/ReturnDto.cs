@@ -9,11 +9,9 @@ namespace books_api.Models
     {
         public int Id { get; set; }
 
-        public AuthorDto Author { get; set; }
 
         public int AuthorId { get; set; }
 
-        public BookDto Book { get; set; }
 
         public int BookId { get; set; }
 

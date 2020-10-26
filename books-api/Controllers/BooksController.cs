@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using books_api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using books.Infrastructure;
+using books.Core.Entities;
 
 namespace books_api.Controllers
 {
@@ -26,7 +28,7 @@ namespace books_api.Controllers
         public ActionResult<BookDto> Get()
         {
             var bookId = _httpContextAccessor.HttpContext.Request.Headers["#Id"].ToString();
-            var book = _BooksDbContext.Baskets.FirstOrDefault(b => b.Id == bookId && !b.IsDeleted);
+            var book = _BooksDbContext.Books.FirstOrDefault(b => b.Id.ToString() == bookId);
             if (book == null)
             {
                 return NotFound("El libro no existe o no está disponible.");
@@ -38,15 +40,15 @@ namespace books_api.Controllers
                 Name = book.Name,
                 PublishDate = book.PublishDate,
                 Copies = book.Copies,
-                Author = book.Author
+                AuthorId = book.AuthorId
             });
         }
 
         [HttpPost]
     
-        public ActionResult<BookDto> Post([FromBody] AddBooks book)
+        public ActionResult<Book> Post([FromBody] AddBooks book)
         {
-            var newBook = new BookDto
+            var newBook = new Book
             {
                 Name = book.Name,
                 PublishDate = DateTime.Now,

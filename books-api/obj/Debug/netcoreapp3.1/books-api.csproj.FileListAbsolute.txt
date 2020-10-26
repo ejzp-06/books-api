@@ -49,3 +49,11 @@ C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\bin\Debug\netcoreapp3.1\
 C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\bin\Debug\netcoreapp3.1\books.Core.dll
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\bin\Debug\netcoreapp3.1\books.Infrastructure.dll
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\obj\Debug\netcoreapp3.1\books-api.csproj.CoreCompileInputs.cache
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\obj\Debug\netcoreapp3.1\books-api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\bin\Debug\netcoreapp3.1\books.Core.pdb
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\bin\Debug\netcoreapp3.1\books.Infrastructure.pdb
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\obj\Debug\netcoreapp3.1\books-api.dll
+C:\Users\ejzp_\Source\Repos\ejzp-06\books-api\books-api\obj\Debug\netcoreapp3.1\books-api.pdb
